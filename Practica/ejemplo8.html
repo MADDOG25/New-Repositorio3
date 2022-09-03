@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina con Frames</title>
+</head>
+<frameset rows="35%, *"><!-- Creo dos subventanas horizontales, la de arriba ocupa un 35% de la pantalla y la de abajo el resto-->
+<frameset cols="20%, *"><!-- Creo dos subventanas verticales, la de la izquierda ocupa un 20% de la pantalla y la de la derecha el resto-->
+    <frame name="botones" src="ejemplo6.html" scrolling="auto"><!--llamo a la subventana horizontal superior izquierda con el nombre "botones" y muestro el documento "botonera.html"-->
+    </frame>
+    <frame name="logo" src="ejemplo1.html" scrolling="auto"><!--llamo a la subventana horizontal superior derecha con el nombre "logo" y muestro el documento "logomio.html"-->
+    </frame>
+</frameset><!--Cierro la definicion de las subventanas verticales que estan en la 1° subventana horizontal-->
+    <frame name="menu" src="ejemplo2.html" scrolling="auto"><!--Llamo a la subventana vertical inferior "menu para que muestre los contenidos de mi pantalla "inicio.html"-->
+    </frame>
+<notframes><!--Indico las ordenes para aquellos navegadores que no soporten frames-->
+<body>
+    Su navegador no muestrta frames. Por favor pulse <a href="aplicacion.html">Aquí</a>para ir a la pagiuna sin frames.
+</body>
+</notframes>
+</frameset><!--Cierro la definicion de las subventanas verticales-->
+</html>

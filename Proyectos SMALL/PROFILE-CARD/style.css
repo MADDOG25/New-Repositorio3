@@ -1,0 +1,100 @@
+/* GENERAL STYLE */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    font-family: 'Merriweather', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#03a9f4, #03a9f4 45%, #fff 45%, #fff 100%);
+}
+/* CARD */
+.card{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: #fff;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+/* IMG BOX */
+.img-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    transform: translateY(30px)scale(0.5);
+    transform-origin: top;
+}
+.img-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+}
+.container .detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container .detail h2{
+    color: #444;
+    font-size: 1.6em;
+    font-weight: bolder;
+}
+.container .detail h2 span{
+    color: #93a9f4;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+.list{
+    display: flex;
+    margin-top: 5px;
+    position: relative;
+}
+.list li{
+    list-style: none;
+    margin: 4px;
+}
+.list li a{
+    display: flex;
+    width: 45px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: transparent;
+    text-decoration: none;
+    color: #444;
+    font-size: 1.5em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: 0.5s;
+}
+.list li a:hover{
+    background: #03a9f4;
+    color: #fff;
+}

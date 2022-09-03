@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DO WHILE PARTE 2</title>
+</head>
+<body>
+
+    <table>
+        <th>
+            <label for="">
+                
+            </label>
+            <input type="text">
+            <label for="">
+                
+            </label>
+            <input type="text">
+        </th>
+
+    </table>
+
+    <script>
+
+        var aleatorio=Math.round(Math.random()*100);
+        var minum, intentos;
+    
+        minum=0;
+        intentos=0;
+
+        var mensaje=document.getElementById("c_mensaje");
+        var intentos_consumidos=document.getElementById("c_intentos");
+    
+    do{
+    
+        minum=prompt("Introduce un n° entre 0 y 100"); 
+    
+        if(aleatorio>minum){
+    
+            mensaje.value="Más alto";
+            mensaje.style.fontSize="18px";
+            mensaje.style.color="blue";
+    
+        }
+    
+        if(aleatorio<minum){
+    
+            mensaje.value="Más bajo";
+            mensaje.style.fontSize="18px";
+            mensaje.style.color="blue";
+        }
+    
+        intentos++;
+
+        intentos_consumidos.value="intentos";
+        intentos_consumidos.style.fontSize="18px";
+        intentos_consumidos.style.color="red";
+        intentos_consumidos.style.textAlign="center";
+    
+    
+    }while(aleatorio!=minum);
+    
+    mensaje.value="Correcto!";
+    mensaje.style.color="green";
+
+    </script>
+
+</body>
+</html>

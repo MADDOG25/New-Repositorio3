@@ -1,0 +1,135 @@
+/* ESTILOS GENERALES */
+body{
+    display: flex;
+    margin: 80px;
+    padding: 0;
+    justify-content: center;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+    background: rgb(214, 225, 225) 100%;
+}
+a{
+    text-decoration: none;
+}
+i{
+    color: rgb(240, 240, 240);
+    margin-left: 1px;
+}
+/* ESTILOS FORM */
+.form-container{
+    display: block;
+    flex-flow: column wrap;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    align-items: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,56,1) 40%, rgba(0,212,255,1) 100%);
+    box-shadow: 0 0 8px 0 rgba(119, 119, 119, 0.8);
+}
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: rgb(240, 240, 240);
+    letter-spacing: 1px;
+}
+    .title:hover{
+        color: #020024;
+    }
+.form-hijo{
+    /* background-color: blueviolet; */
+    position: relative;
+    margin: 30px;
+    padding: 5px;
+}
+input{
+    background: none;
+    color: rgb(240, 240, 240);
+    border: none;
+    border-bottom: 1px solid black;
+}
+input:focus{
+    outline: none;
+    color: rgb(240, 240, 240);
+}
+.user{
+    display: inline-block;
+    color: rgb(2,0,36);
+    margin: 2px;
+    padding: 3px;
+    align-content: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    /* pointer-events: none; */
+}
+    .user i:hover{
+        color: #020024;
+    }
+.pass{
+    display: inline-block;
+    /* background-color: brown; */
+    color: rgb(2,0,36);
+    margin: 2px;
+    padding: 3px;
+    align-content: center;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+    .pass i:hover{
+        color: #020024;
+    }
+.fp{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+    margin: 3px;
+    padding: 5px;
+}
+    .fp i:hover{
+        color: #020024;
+    }
+input[type="submit"]{
+    display: block;
+	border: none;
+    box-shadow: none;
+    border-radius: 5px;
+    margin: 20px auto;
+	width: 150px;
+    height: 40px;
+    font-size: 16px;
+    /* margin: 3px;
+    padding: 5px; */
+    text-align: center;
+    cursor: pointer;
+}
+.btn{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #020024;
+    background: rgb(214, 225, 225);
+}
+.signup-link{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+    /* background-color: yellowgreen; */
+    margin: 3px;
+    padding: 5px;
+
+}
+.signup-link a{
+    color: rgb(240, 240, 240);
+    margin-left: 5px;
+}
+    .signup-link a:hover{
+        color: #020024;
+    }
+
+@media (max-width: 600px){
+    .form{
+        width: 80%;
+}
+}

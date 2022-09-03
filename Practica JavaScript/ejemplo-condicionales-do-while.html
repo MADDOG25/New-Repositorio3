@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional DO WHILE</title>
+</head>
+<body>
+    
+
+    <script>
+
+        var nombre, edad, poblacion;
+
+        //nombre=prompt("Introduce tu nombre por favor: ", "Escribe aquí el nombre");
+
+        do{
+
+            nombre=prompt("Introduce tu nombre por favor:", "Escribe aquí el nombre");
+
+        }while(!isNaN(nombre));
+
+        //edad=prompt("Introduce tu edad por favor: ", "Escribe tu edad aquí");
+
+            do{
+
+                edad=prompt("Introduce tu edad correcta.", "Escribe aquí tu edad");
+
+            }while(edad<=0 || edad>105 || isNan(edad));
+
+        //poblacion=prompt("Introduce tu población aquí: ", "Escribe tu población aquí");
+
+            do{
+
+                poblacion=prompt("Introduce una población valida.", "Escribe tu población aquí")
+
+            }while(!isNaN(poblacion));
+
+
+    </script>
+</body>
+</html>

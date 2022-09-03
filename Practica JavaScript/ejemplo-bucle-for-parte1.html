@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucle For Parte 1</title>
+
+    <script>
+
+    var trabajadores=new Array(); //Esto es un array indeterminado
+    var persona=""; //Esto es una cadena vacia
+    var contador=0;
+
+    while(persona!="salir"){
+
+        persona=prompt("Introduce trabajador:");
+        trabajadores[contador]=persona;
+
+        contador++;
+
+    }
+
+    trabajadores.pop(); //Esto elimina la ultima posicion del array
+
+    for(var i=0;i<trabajadores.length;i++){
+
+        document.write(trabajadores[i] + "<br>");
+
+    }
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

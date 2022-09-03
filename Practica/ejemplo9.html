@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="mailto:lml@um.es" method="post">
+        Tu nombre: <input type="text" name="nombre" size="30">
+        Tu clave: <input type="password" name="clave" size="8"> 
+<p>
+    Archivos a enviar:<br>
+    <input type="checkbox" name="archivo" value="Manual"> Manual de HTML
+    <input type="checkbox" name="archivo" value="Marpthis"> Programa Mapthis
+    <input type="checkbox" name="archivo" value="Help"> Archivo de Ayuda
+</p>
+    Tu edad:<br>
+<p>
+    <input type="radio" name="edad" value="-20"> Menos de 20 años
+    <input type="radio" name="edad" value="20-40"> Entre 20 y 40 años
+    <input type="radio" name="edad" value="+40"> Mas de 40 años
+</p>
+    <input type="hidden" name="lugar" value="pagina personal">
+    ¿Como encontraste mi pagina?
+<select name="donde">
+    <option>De casualidad</option>
+    <option>Por el buscador Ole</option>
+    <option>Por el buscador Yahoo</option>
+    <option>Me la recomendaron</option>
+</select>
+<p>
+    Tus comentarios:
+    <br>
+    <textarea name="comentqario" cols="40" rows="5" wrap="virtual"></textarea>
+</p>
+<input type="submit" value="Enviar">
+<input type="reset" value="Borrar">
+</form>
+</body>
+</html>

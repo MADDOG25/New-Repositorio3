@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <!-- ESTILOS CSS -->
+    <link rel="stylesheet" href="style-login.css">
+    <title>LOGIN</title>
+</head>
+<body>
+    
+    <form class="form-container" action="" method="post">
+        <div class="title">
+            <h1>Login</h1>
+        </div>
+        <div class="form-hijo">
+            <input class="user" type="text" name="username" id="username" maxlength="30" required><span class="barra"></span>
+            <a href="#" class="user">Username
+                <i class="fa-solid fa-users"></i>
+            </a>
+        </div>
+        <div class="form-hijo">
+            <input class="pass" type="password" name="password" id="password" maxlength="8" required><span class="barra"></span>
+            <a href="#" class="pass">Password
+                <i class="fa-solid fa-key"></i>
+            </a>
+        </div>
+        <div class="fp">Forgot Password
+            <a href="#"> <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+        </div>
+            <input class="btn" type="submit" value="Login">
+        <div class="signup-link">
+            Not a member? <a href="#">SignUp</a>
+        </div>
+    </form>
+</body>
+</html>

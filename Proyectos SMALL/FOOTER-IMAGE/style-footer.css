@@ -1,0 +1,104 @@
+*{
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: #ff9090;
+}
+.footer-contenedor{
+    width: 100%;
+    height: 100%;
+    background-color: #3f2f2f;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 600;
+    font-size: 40px;
+    margin: 10px;
+    padding: 10px;
+}
+hr{
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 1px solid burlywood;
+}
+.row-padre{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.row-hijo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 1;
+    margin: 4px;
+}
+.col-padre{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 8px;
+    font-size: 16px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.form ul li{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+li{
+    font-size: 16px;
+    list-style: none;
+    padding: 2px;
+    text-align: center;
+}
+a{
+    padding: 2px;
+    text-decoration: none;
+    color: rgb(175, 175, 175);
+    cursor: pointer;
+}
+a i{
+    font-size: 18px;
+    cursor: pointer;
+}
+a:hover{
+    color: burlywood;
+}
+label{
+    font-size: 20px;
+}
+input{
+    background-color: rgb(240, 240, 240);
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+    padding: 4px;
+    text-align: center;
+}
+.fa-solid{
+    color: burlywood;
+}
