@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edad y Nacimiento</title>
+</head>
+<body>
+    <script>
+        let añoactual=2022;
+
+        let edad=0;
+
+        let añonacimiento=prompt("Introduce tu año de nacimiento y daremos con tu edad");
+
+        if(añonacimiento<=añoactual){
+
+            edad=parseInt(añoactual)-parseInt(añonacimiento);
+
+            alert("Esta es tu edad: "+edad+ " años");
+        }else{
+
+            alert("Año de nacimiento no valido, coloca uno correcto.");
+        }
+    </script>
+    
+</body>
+</html>

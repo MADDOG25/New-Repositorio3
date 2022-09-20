@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora JavaScript</title>
+    <script>
+        let cifra="";
+        let acumulado=0;
+        let p_operacion=true;
+        let sumar=false;
+        let restar=false;
+
+        function display_numeros(numero){
+
+            document.getElementById("display").value=cifra+numero;
+            cifra=document.getElementById("display").value;
+        }
+        function suma(){
+
+            if(restar){
+                acumulado=acumulado-parseInt(cifra);
+                document.getElementById("display").value=acumulado;
+            }else{
+                acumulado=acumulado+parseInt(cifra);
+                document.getElementById("display").value=acumulado;
+            }
+            cifra="";
+            sumar=true;
+            restar=false;
+        }
+        function resta(){
+            
+            if(p_operacion==false){
+
+                if(sumar){
+
+                    acumulado=acumulado+parseInt(cifra);
+                    document.getElementById("display").value=acumulado;
+                }else{
+                    acumulado=acumulado-parseInt(cifra);
+                    document.getElementById("display").value=acumulado;
+                }
+            }else{
+                    acumulado=parseInt(cifra);
+                    p_operacion=false;
+                }
+            
+            cifra="";
+            sumar=false;
+            restar=true;
+        }
+        function resultado(){
+
+            if(sumar){
+
+                document.getElementById("display").value=acumulado+parseInt(cifra);
+            }else if(restar){
+
+                document.getElementById("display").value=acumulado-parseInt(cifra);
+            }
+            acumulado=parseInt(document.getElementById("display").value);
+            cifra=0;
+        }
+
+
+    </script>
+</head>
+<body>
+    <form name="calc">
+        <table border="1">
+            <tr>
+                <td colspan="4">
+                    <input type="text" name="display" id="display" readonly>
+                </td>
+            </tr>
+            <td><input type="button" name="num0" id="num0" value="0" onclick="display_numeros(0)"></td>
+            <td><input type="button" name="num1" id="num1" value="1" onclick="display_numeros(1)"></td>
+            <td><input type="button" name="num2" id="num2" value="2" onclick="display_numeros(2)"></td>
+            <td>
+                <input type="button" class="operator" name="plus" id="plus" value="+" onclick="suma()">
+            </td>
+            <tr>
+            <td><input type="button" name="num3" id="num3" value="3" onclick="display_numeros(3)"></td>
+            <td><input type="button" name="num4" id="num4" value="4" onclick="display_numeros(4)"></td>
+            <td><input type="button" name="num5" id="num5" value="5" onclick="display_numeros(5)"></td>
+            <td>
+                <input type="button" class="operator" name="minus" value="-" onclick="resta()">
+            </td>
+            </tr>
+            <tr>
+            <td><input type="button" name="num6" id="num6" value="6" onclick="display_numeros(6)"></td>
+            <td><input type="button" name="num7" id="num7" value="7" onclick="display_numeros(7)"></td>
+            <td><input type="button" name="num8" id="num8" value="8" onclick="display_numeros(8)"></td>
+            <td>
+                <input type="button" class="operator" name="times" id="times" value="*" onclick=>
+            </td>
+            </tr>
+            <tr>
+            <td><input type="button" name="num9" id="num9" value="9" onclick="display_numeros(9)"></td>
+            <td>
+                <input type="button" name="clear" id="clear" value="c" onclick=></td>
+            <td>
+                <input type="button" class="operator" name="equal" id="equal" value="=" onclick="resultado()">
+            </td>
+            <td>
+                <input type="button" class="operator" name="div" id="div" value="/" onclick=>
+            </td>
+            </tr>
+        </table>
+    </form>
+<script>
+    document.getElementById("display").value=0;
+</script>
+    
+</body>
+</html>

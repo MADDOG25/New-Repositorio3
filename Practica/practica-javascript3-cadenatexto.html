@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones Basicas</title>
+</head>
+<body>
+    <script>
+
+      resultado=0;
+
+      let operacion=prompt("Que operacion quiere hacer: suma, resta, multiplicacion");
+
+      let num1=prompt("Introduce el primer numero");
+      let num2=prompt("Introduce el segundo numero");
+      let num3=prompt("Introduce el tercer numero");
+
+      if(operacion=="suma"){
+
+        resultado=(parseInt(num1) + parseInt(num2))  + parseInt(num3);
+        alert(resultado);
+
+      }else if(operacion=="resta"){
+
+        resultado=(parseInt(num1) - parseInt(num2))  - parseInt(num3);
+        alert(resultado);
+      }else if(operacion=="multiplicar"){
+
+        resultado=(parseInt(num1) * parseInt(num2))  * parseInt(num3);
+        alert(resultado);
+      }else{
+
+        alert("Operacion invalida coloque una operacion correcta a realizar")
+      }
+
+    </script>
+</body>
+</html>
