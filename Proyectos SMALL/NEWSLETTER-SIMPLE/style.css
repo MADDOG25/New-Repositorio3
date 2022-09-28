@@ -1,0 +1,84 @@
+.section{
+    display: grid;
+    display: -ms-grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: 'Muli', sans-serif;
+    font-size: 1rem;
+    background-color: #F1E8E6;
+    color: #000;
+}
+.container{
+    display: grid; 
+    display: -ms-grid;
+    place-items: center;
+    max-width: 400px;
+    padding: 0;
+    border-radius: 1em;
+    background-color: #fff;
+    -webkit-box-shadow: 0 17px 34px -20px #f55951;
+    box-shadow: 0 17px 34px -20px #f55951;
+    overflow: hidden;
+}
+.img_container{
+    display: block;
+    width: 50vw;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 1.5em;
+}
+.img{
+    width: 100%;
+    height: auto;
+    border-radius: 1em 1em 0 0;
+    object-fit: cover;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.content{
+    display: grid;
+    display: -ms-grid;
+    place-items: center;
+    padding: 0 2em;
+    margin-bottom: 1.8em;
+}
+.subtitle{
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+.title{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.9em;
+}
+.mail{
+    width: 100%;
+    line-height: 3;
+    padding: 0.5em 0 0.5em 1.5em;
+    margin-bottom: 1em;
+    border: 1px solid #d9d9d9;
+    border-radius: 0.5em;
+}
+.placeholder{  
+    color: #111127;
+}
+.subscribe{
+    display: inline-block;
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 0.9em 0;
+    margin-bottom: 1.3em;
+    border: none;
+    border-radius: 0.5em;
+    color: #fff;
+    background-color: #f55951;
+    cursor: pointer;
+}
+.text{
+    font-size: 0.9rem;
+    width: 90%;
+    text-align: center;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edad Hermanos</title>
+</head>
+<body>
+    <script>
+
+        diferencia=0;
+
+        let hermano1=prompt("Primer hermano coloca cuantos años tienes");
+        let hermano2=prompt("Segundo hermano coloca cuantos años tienes");
+
+
+        if(hermano1>=hermano2){
+
+            diferencia=parseInt(hermano1)-parseInt(hermano2);
+
+            alert("Los años de diferencia que tienen son: "+diferencia);
+        }else if(hermano2>=hermano1){
+
+            diferencia=parseInt(hermano2)-parseInt(hermano1);
+
+            alert("Los años de diferencia que tiene el hermano mayor del menor son: "+diferencia);
+        }else{
+
+            alert("Datos Invalidos");
+        }
+    </script>
+    
+</body>
+</html>

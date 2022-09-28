@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio</title>
+</head>
+<body>
+    <script>
+
+        let promedio=0;
+        let asignatura=prompt("Introduzca una Asignatura");
+
+        let nota1=prompt("Coloca primera nota");
+        let nota2=prompt("Coloca segunda nota");
+        let nota3=prompt("Coloca tercera nota");
+        let nota4=prompt("Coloca cuarta nota");
+        let nota5=prompt("Coloca quinta nota");
+
+        promedio= (parseFloat(nota1)  + parseFloat(nota2) + parseFloat(nota3) + parseFloat(nota4) + parseFloat(nota5)) / 5;
+
+        alert("Tu promedio de notas es: " + promedio.toFixed(1) + " en " + asignatura);
+    </script>
+    
+</body>
+</html>

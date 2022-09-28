@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Age</title>
+</head>
+<body>
+    <script>
+
+        let nombre=prompt("Introduce tu nombre");
+        let edad=prompt("Cuantos años tienes");
+
+        alert("Te mostraremos en que categoria te encuentras con los datos enviados");
+
+        if(parseInt(edad)>=15 && parseInt(edad)<=20){
+
+            alert("Tu "+nombre+" con "+parseInt(edad)+" años eres un Joven estudiante.");
+        }else if(parseInt(edad)>20 && parseInt(edad)<=50){
+
+            alert("Tu "+nombre+" con "+parseInt(edad)+" años eres un Adulto profesional.");
+        }else{
+
+            alert("Datos enviados incorrectos, vuelva a enviarlos");
+        }
+    </script>
+    
+</body>
+</html>
