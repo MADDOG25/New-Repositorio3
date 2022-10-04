@@ -1,0 +1,56 @@
+*{
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Inter Tight', sans-serif;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.img_background picture img{
+    display: block;
+    margin: auto;
+    height: auto;
+    width: 100vw;
+    position: relative;
+}
+.section_text{
+    display: block;
+    margin: 5rem;
+    padding: 0.5rem;
+    position: absolute;
+}
+.title{
+    font-size: 3.5em;
+    color: #fff;
+}
+.title_panama{
+    font-size: 7.5em;
+    margin-bottom: 0.1em;
+    color: #06283D;
+}
+.subtitle{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1.3em;
+    color: #fff;
+}
+.btn_explore{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1;
+    padding: 0.2em;
+    margin: 0.4em;
+    border: none;
+    border-radius: 6px 0 6px 0;
+    pointer-events: auto;
+    cursor: pointer;
+    background-color: #06283D;
+    filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 10px #fff) contrast(1) brightness(0.8);
+}
