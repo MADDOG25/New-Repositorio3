@@ -6,9 +6,9 @@
 body{
     font-family: 'Inter Tight', sans-serif;
 }
-.cont{
+/* CONTAINER SECTION 1 */
+.cont_section1{
     display: flex;
-    flex-direction: column;
     flex-wrap: nowrap;
     overflow: hidden;
 }
@@ -44,7 +44,7 @@ body{
     font-size: 1.5rem;
     font-weight: 500;
     color: #fff;
-    letter-spacing: 1;
+    letter-spacing: 1px;
     padding: 0.2em;
     margin: 0.4em;
     border: none;
@@ -52,5 +52,97 @@ body{
     pointer-events: auto;
     cursor: pointer;
     background-color: #06283D;
-    filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 10px #fff) contrast(1) brightness(0.8);
+    filter: drop-shadow(0 0 8px #fff) drop-shadow(0 0 8px #fff) contrast(1) brightness(0.8);
+}
+/* CONTAINER SECTION 2 */
+.cont_section2{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.img_background_section2 picture img{
+    display: block;
+    margin: auto;
+    height: auto;
+    width: 100vw;
+    position: relative;
+}
+/* NAV */
+.div_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    margin: 1rem;
+    padding: 0.5rem;
+    width: 95vw;
+}
+.div_navbar a{
+    color: #fff;
+    text-decoration: none;
+}
+.div_logo{
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.div_logo a:hover{
+    filter: drop-shadow(0 0 8px #feffff) drop-shadow(0 0 8px #feffff) contrast(1) brightness(0.9);
+}
+.div_menu{
+    font-size: 1.3em;
+    font-weight: 500;
+}
+.div_menu a{
+    padding: 0.3rem;
+}
+.div_menu a:hover{
+    color: rgb(113, 155, 35);
+    filter: drop-shadow(0 0 8px #feffff) drop-shadow(0 0 8px #feffff) contrast(1) brightness(0.9);
+}
+/* SECTION TEXT SECTION 2 */
+.section_text_section2{
+    display: block;
+    left: 40%;
+    margin: 5rem;
+    margin-top: 8rem;
+    padding: 0.5rem;
+    right: 0%;
+    position: absolute;
+}
+.title_section2{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 3.5em;
+    color: #fff;
+}
+.title_panama_section2{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 7.5em;
+    margin-bottom: 0.1em;
+    color: rgb(113, 155, 35);
+}
+.subtitle_section2{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1.3em;
+    color: #fff;
+}
+.btn_explore_section2{
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 0.2em;
+    margin: 0.4em;
+    border: none;
+    border-radius: 6px 0 6px 0;
+    pointer-events: auto;
+    cursor: pointer;
+    background-color: rgb(113, 155, 35);
+    filter: drop-shadow(0 0 8px #feffff) drop-shadow(0 0 8px #feffff) contrast(1) brightness(0.9);
 }
