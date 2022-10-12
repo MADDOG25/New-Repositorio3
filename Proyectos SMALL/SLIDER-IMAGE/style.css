@@ -16,33 +16,56 @@ body{
     justify-content: center;
 }
 h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
     margin: 0.2rem;
     font-size: 3.2em;
     font-weight: 600;
+    text-shadow: 0.1rem 0.1rem 5px rgb(66, 66, 66);
     cursor: pointer;
 }
 h1:hover{
-    text-shadow: 0.1rem 0.1rem 20px rgb(66, 66, 66);
+    text-shadow: 0.1rem 0.1rem 5px rgb(30, 67, 126);
     transition: 0.5s all ease-in;
 }
 /* CONTAINER IMG */
-.container-img{
+.container{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
+.container-img{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+.text{
+    position: absolute;
+    bottom: 20px;
+    color: #fff;
+    cursor: pointer;
+}
 .container-img img{
+    position: relative;
     margin: 0.8rem;
     margin-bottom: 0.6rem;
     width: auto;
+    height: 50vh;
     border-radius: 8px;
     cursor: pointer;
 }
 .container-img img:hover{
-    box-shadow: 10px 6px 15px rgb(99, 99, 99);
+    box-shadow: 10px 6px 10px rgb(99, 99, 99);
     transition: 0.5s all ease-in;
 }
+/* FOOTER */
 .div-footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
     margin: 0.8rem;
     font-size: 1em;
     font-weight: 400;
