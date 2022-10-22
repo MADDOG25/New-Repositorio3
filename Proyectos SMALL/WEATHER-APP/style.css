@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swa");
+/* GENERAL */
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: linear-gradient(300deg, #757b87, #909d9d);
+}
+/* ELEMENTS */
+input{
+    padding: 1rem;
+    border-radius: 25px;
+    border: none;
+    min-width: 300px;
+    font-size: 1rem;
+    font-family: inherit;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+input:focus{
+    outline: none;
+}
+/* CLASSES */
+.wheather{
+    text-align: center;
+    font-size: 2rem;
+}
+.wheather h2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
