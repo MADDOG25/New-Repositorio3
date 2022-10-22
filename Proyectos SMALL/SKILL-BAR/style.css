@@ -1,0 +1,84 @@
+/* GENERAL */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'open sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+}
+/* SKILL */
+.skill{
+    width: 100%; max-width: 600px;
+    padding: 0 20px;
+}
+.section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.section-title h1{
+    display: inline-block;
+    position: relative;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 5px;
+}
+.section h1:before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    right: 32%;
+    left: 0;
+    bottom: 0px;
+    background-color: mediumseagreen;
+}
+.skills .section-title h1:before{
+    left: 30%;
+}
+.text-center{
+    text-align: center;
+}
+.skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.skill-bar{
+    height: 20px;
+    background: #cacaca;
+    border-radius: 8px;
+}
+.skill-per{
+    width: 0; height: 20px;
+    position: relative;
+    background-color: mediumseagreen;
+    border-radius: 8px;
+    transition: 1s linear;
+}
+.skill-per::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    right: 0; top: -35px;
+    background-color: #000;
+    color: #ffff;
+    font-size: 12px;
+    border-radius: 4px;
+    transform: translate(50%);
+}
+.skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px; height: 10px;
+    right: 0; top: -16px;
+    background-color: #000;
+    border-radius: 2px;
+    transform: translate(50%);
+    transform: translateX(50%) rotate(45deg);
+}
